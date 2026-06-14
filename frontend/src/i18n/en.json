@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "brand": "Rice Leaf AI",
+    "home": "Home",
+    "detection": "Detection",
+    "chatbot": "AI Assistant",
+    "about": "About"
+  },
+  "home": {
+    "title": "Rice Leaf Disease",
+    "titleHighlight": "Detection System",
+    "subtitle": "Upload a rice leaf image and get instant AI-powered disease diagnosis. Helping farmers protect their crops with precision agriculture technology.",
+    "ctaDetect": "Start Detection",
+    "ctaLearn": "Learn More",
+    "stat1Value": "98.2%",
+    "stat1Label": "Accuracy Rate",
+    "stat2Value": "5",
+    "stat2Label": "Diseases Detected",
+    "stat3Value": "<2s",
+    "stat3Label": "Analysis Time",
+    "featuresTitle": "How It Works",
+    "feature1Title": "Upload Image",
+    "feature1Desc": "Take a photo of your rice leaf or upload from your gallery for instant analysis.",
+    "feature2Title": "AI Analysis",
+    "feature2Desc": "Our deep learning model scans for disease patterns with high precision.",
+    "feature3Title": "Get Results",
+    "feature3Desc": "Receive detailed diagnosis with confidence scores and treatment recommendations."
+  },
+  "detection": {
+    "title": "Disease Detection",
+    "subtitle": "Upload a rice leaf image for AI-powered diagnosis",
+    "uploadTitle": "Upload Leaf Image",
+    "uploadDesc": "Drag & drop or click to browse",
+    "uploadHint": "Supports JPG, PNG, WEBP · Max 10MB",
+    "changeImage": "Change Image",
+    "analyzeBtn": "Analyze Image",
+    "analyzingBtn": "Analyzing...",
+    "resultsTitle": "Analysis Results",
+    "disease": "Detected Disease",
+    "confidence": "Confidence Score",
+    "severity": "Severity Level",
+    "recommendation": "Recommendation",
+    "tips": "Detection Tips",
+    "tip1": "Ensure the leaf is in clear focus",
+    "tip2": "Use natural lighting for best results",
+    "tip3": "Capture the full leaf in frame",
+    "tip4": "Avoid shadows across the leaf surface"
+  },
+  "chatbot": {
+    "title": "AI Field Assistant",
+    "subtitle": "Ask me anything about rice diseases, treatment, or crop management",
+    "placeholder": "Ask about rice diseases...",
+    "send": "Send",
+    "botGreeting": "Hello! I'm your AI agricultural assistant. Ask me about rice diseases, symptoms, treatments, or farming best practices.",
+    "aiResponse": "AI response coming soon..."
+  },
+  "about": {
+    "title": "About Rice Leaf AI",
+    "subtitle": "Advanced AI technology for modern rice cultivation",
+    "missionTitle": "Our Mission",
+    "missionDesc": "We empower farmers and agricultural experts with cutting-edge AI technology to detect rice diseases early, reduce crop losses, and improve food security across rice-growing regions.",
+    "diseasesTitle": "Supported Diseases",
+    "disease1Name": "Brown Spot",
+    "disease1Desc": "Caused by Bipolaris oryzae fungus, appearing as oval brown lesions on leaves.",
+    "disease2Name": "Leaf Blast",
+    "disease2Desc": "Caused by Magnaporthe oryzae, creating diamond-shaped gray lesions.",
+    "disease3Name": "Bacterial Leaf Blight",
+    "disease3Desc": "Caused by Xanthomonas oryzae, causing yellowing and wilting of leaf tips.",
+    "techTitle": "Technology Stack",
+    "tech1": "Deep Learning CNN Model",
+    "tech2": "Transfer Learning (ResNet50)",
+    "tech3": "Real-time Image Processing",
+    "tech4": "React + Vite Frontend"
+  },
+  "toast": {
+    "success": "Analysis completed successfully!",
+    "error": "Analysis failed. Please try again."
+  },
+  "footer": {
+    "tagline": "Protecting rice crops with AI intelligence",
+    "rights": "© 2025 Rice Leaf AI. All rights reserved."
+  },
+
+  
+  "result": {
+    "invalidImage": "Invalid / Non-Rice Leaf Image",
+    "invalidTitle": "Invalid Image",
+    "invalidMessage": "The uploaded image does not appear to be a valid rice leaf. Please upload a clear photograph of a rice leaf for analysis.",
+    "topPredictions": "Top Predictions",
+    "entropy": "Entropy"
+  },
+
+  "diseases": {
+    "healthy": "Healthy",
+    "brown_spot": "Brown Spot",
+    "leaf_blast": "Leaf Blast",
+    "leaf_scald": "Leaf Scald",
+    "bacterial_leaf_blight": "Bacterial Leaf Blight",
+    "narrow_brown_spot": "Narrow Brown Spot",
+    "non_rice_leaf": "Non Rice Leaf"
+  }
+
+}
