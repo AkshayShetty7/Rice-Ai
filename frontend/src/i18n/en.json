@@ -48,7 +48,7 @@
   },
   "chatbot": {
     "title": "AI Field Assistant",
-    "subtitle": "Ask me anything about rice diseases, treatment, or crop management",
+    "subtitle": "Ask me anything about rice diseases",
     "placeholder": "Ask about rice diseases...",
     "send": "Send",
     "botGreeting": "Hello! I'm your AI agricultural assistant. Ask me about rice diseases, symptoms, treatments, or farming best practices.",

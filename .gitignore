@@ -3,6 +3,5 @@ __pycache__/
 .vite/
 node_modules/
 .env
-*.pt
 dist/
 build/

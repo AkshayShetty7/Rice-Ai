@@ -5,3 +5,33 @@ torchvision
 pillow
 python-multipart
 numpy
+
+# Core LangChain
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-groq==0.3.2
+langchain-huggingface==0.1.2
+
+# Vector Database
+faiss-cpu==1.11.0
+
+# Embeddings & Re-ranking
+sentence-transformers==4.1.0
+transformers==4.52.4
+huggingface-hub==0.32.2
+
+# PyTorch (CPU)
+torch==2.7.0
+torchvision==0.22.0
+
+# PDF Processing
+pypdf==5.4.0
+
+# Environment Variables
+python-dotenv==1.1.0
+
+# PDF Export (optional)
+fpdf2==2.8.3
+
+# Numerical Computing
+numpy==2.2.6

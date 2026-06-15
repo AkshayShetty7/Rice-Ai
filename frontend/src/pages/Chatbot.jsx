@@ -2,27 +2,62 @@ import { useState, useRef, useEffect } from "react";
 import { useI18n } from "../i18n";
 import { useChatHistory } from "../hooks/useChatHistory";
 
+
+const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+
 export default function Chatbot() {
   const { t } = useI18n();
   const greeting = t("chatbot.botGreeting");
 
   const { messages, isRestored, addMessage, clearHistory } = useChatHistory(greeting);
-  const [input, setInput] = useState("");
+  const [input, setInput]     = useState("");
+  const [loading, setLoading] = useState(false);
   const bottomRef = useRef(null);
 
-  // Scroll to bottom on new message
+  // Scroll to bottom on every new message
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // Original sendMessage logic preserved exactly
-  const sendMessage = () => {
-    if (!input.trim()) return;
-    addMessage({ role: "user", text: input });
+  const sendMessage = async () => {
+    if (!input.trim() || loading) return;
+
+    const userText = input.trim();
     setInput("");
-    setTimeout(() => {
-      addMessage({ role: "bot", text: t("chatbot.aiResponse") });
-    }, 500);
+    addMessage({ role: "user", text: userText });
+    setLoading(true);
+
+    try {
+
+      const historyPayload = messages
+        .filter((m) => m.text !== greeting)   
+        .slice(-10)                            
+        .map((m) => ({ role: m.role, text: m.text }));
+
+      const res = await fetch(`${API_BASE}/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: userText,
+          history: historyPayload,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Server error: ${res.status}`);
+      }
+
+      const data = await res.json();
+      addMessage({ role: "bot", text: data.reply });
+    } catch (err) {
+      addMessage({
+        role: "bot",
+        text: "Could not reach the server. Please make sure the backend is running.",
+      });
+      console.error("Chat error:", err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleKeyDown = (e) => {
@@ -72,9 +107,23 @@ export default function Chatbot() {
             <div className="chat-messages" role="log" aria-label="Chat messages">
               {messages.map((m, i) => (
                 <div key={i} className={`msg ${m.role}`}>
-                  {m.text}
+                  {/* Render newlines that come back from the RAG answer */}
+                  {m.text.split("\n").map((line, j) => (
+                    <span key={j}>
+                      {line}
+                      {j < m.text.split("\n").length - 1 && <br />}
+                    </span>
+                  ))}
                 </div>
               ))}
+
+              {/* Typing indicator while waiting for the server */}
+              {loading && (
+                <div className="msg bot" style={{ opacity: 0.6, fontStyle: "italic" }}>
+                  Thinking…
+                </div>
+              )}
+
               <div ref={bottomRef} />
             </div>
 
@@ -87,16 +136,18 @@ export default function Chatbot() {
                 onKeyDown={handleKeyDown}
                 placeholder={t("chatbot.placeholder")}
                 aria-label={t("chatbot.placeholder")}
+                disabled={loading}
               />
               <button
                 className="btn btn-primary"
                 onClick={sendMessage}
-                disabled={!input.trim()}
+                disabled={!input.trim() || loading}
                 style={{ flexShrink: 0, padding: "10px 20px" }}
               >
-                {t("chatbot.send")} →
+                {loading ? "…" : `${t("chatbot.send")} →`}
               </button>
             </div>
+
           </div>
         </div>
       </div>
