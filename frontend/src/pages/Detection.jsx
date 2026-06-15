@@ -32,8 +32,10 @@ export default function Detection() {
       const formData = new FormData();
       formData.append("file", file);
 
+      const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+
       const response = await fetch(
-        "http://127.0.0.1:8000/predict",
+        `${API_BASE}/predict`,
         {
           method: "POST",
           body: formData,
