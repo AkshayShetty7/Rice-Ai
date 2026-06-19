@@ -26,18 +26,18 @@ https://huggingface.co/datasets/Akshayshetty7/rice-ai-documents
 
 ### Disease Detection
 
-* Rice leaf disease classification using EfficientNet-B3
-* Top-3 prediction probabilities
+* Rice leaf disease classification using EfficientNet B3
+* Top 3 prediction probabilities
 * Confidence scoring
-* Out-of-Distribution (OOD) detection
-* Non-rice leaf image rejection
+* Out of Distribution (OOD) detection
+* Non rice leaf image rejection
 
 ### Farmer Assistant
 
 * Natural language question answering
-* Retrieval-Augmented Generation (RAG)
-* Source-grounded responses
-* Context-aware conversations
+* Retrieval Augmented Generation (RAG)
+* Source grounded responses
+* Context aware conversations
 * Agricultural PDF knowledge base
 
 ### Multilingual Support
@@ -115,11 +115,11 @@ https://huggingface.co/datasets/Akshayshetty7/rice-ai-documents
 
 ### AI & RAG
 
-* EfficientNet-B3
+* EfficientNet B3
 * LangChain
 * FAISS
 * BAAI Embeddings
-* Cross-Encoder Re-ranking
+* Cross Encoder Re ranking
 * Groq LLM
 
 ### Deployment
