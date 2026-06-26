@@ -11,7 +11,7 @@
     "titleHighlight": "पहचान प्रणाली",
     "subtitle": "धान की पत्ती की फोटो अपलोड करें और तुरंत AI-संचालित रोग निदान प्राप्त करें। परिशुद्ध कृषि तकनीक से किसानों की फसल सुरक्षा में मदद।",
     "ctaDetect": "पहचान शुरू करें",
-    "ctaLearn": "और जानें",
+    "ctaLearn": "Ai चैटबॉट",
     "stat1Value": "98.2%",
     "stat1Label": "सटीकता दर",
     "stat2Value": "5",
@@ -54,24 +54,62 @@
     "botGreeting": "नमस्ते! मैं आपका AI कृषि सहायक हूं। मुझसे धान के रोगों, लक्षणों, उपचारों या खेती की सर्वोत्तम प्रथाओं के बारे में पूछें।",
     "aiResponse": "AI उत्तर जल्द आएगा..."
   },
-  "about": {
-    "title": "राइस लीफ AI के बारे में",
-    "subtitle": "आधुनिक धान की खेती के लिए उन्नत AI तकनीक",
-    "missionTitle": "हमारा उद्देश्य",
-    "missionDesc": "हम किसानों और कृषि विशेषज्ञों को धान के रोगों का जल्दी पता लगाने, फसल नुकसान कम करने और चावल उगाने वाले क्षेत्रों में खाद्य सुरक्षा सुधारने के लिए अत्याधुनिक AI तकनीक से सशक्त बनाते हैं।",
-    "diseasesTitle": "समर्थित रोग",
-    "disease1Name": "ब्राउन स्पॉट",
-    "disease1Desc": "Bipolaris oryzae कवक द्वारा, पत्तियों पर अंडाकार भूरे धब्बे दिखाई देते हैं।",
-    "disease2Name": "लीफ ब्लास्ट",
-    "disease2Desc": "Magnaporthe oryzae द्वारा, हीरे के आकार के भूरे धब्बे बनते हैं।",
-    "disease3Name": "बैक्टीरियल लीफ ब्लाइट",
-    "disease3Desc": "Xanthomonas oryzae द्वारा, पत्ती की युक्तियों का पीलापन और मुरझाना।",
-    "techTitle": "तकनीकी स्टैक",
-    "tech1": "डीप लर्निंग CNN मॉडल",
-    "tech2": "ट्रांसफर लर्निंग (ResNet50)",
-    "tech3": "रियल-टाइम इमेज प्रोसेसिंग",
-    "tech4": "React + Vite फ्रंटएंड"
-  },
+"about": {
+  "title": "राइस लीफ AI के बारे में",
+  "subtitle": "AI आधारित धान रोग पहचान एवं बुद्धिमान कृषि सहायक",
+
+  "missionTitle": "हमारा उद्देश्य",
+  "missionDesc": "Rice Leaf AI किसानों, छात्रों और कृषि विशेषज्ञों को उन्नत कृत्रिम बुद्धिमत्ता की सहायता से धान की पत्तियों के रोगों की शीघ्र पहचान करने, फसल हानि कम करने तथा उत्पादकता बढ़ाने में सहायता करता है। रोग पहचान के साथ हमारा AI चैटबॉट RAG आधारित ज्ञान प्रणाली का उपयोग करके रोग के लक्षण, उपचार, रोकथाम तथा आधुनिक कृषि पद्धतियों पर तुरंत मार्गदर्शन प्रदान करता है।",
+
+  "diseasesTitle": "समर्थित श्रेणियाँ",
+
+  "disease1Name": "बैक्टीरियल लीफ ब्लाइट",
+  "disease1Desc": "Xanthomonas oryzae बैक्टीरिया द्वारा होने वाला रोग जिससे पत्तियाँ पीली होकर सूखने लगती हैं।",
+
+  "disease2Name": "ब्राउन स्पॉट",
+  "disease2Desc": "Bipolaris oryzae कवक द्वारा होने वाला रोग जिसमें भूरे अंडाकार धब्बे बनते हैं।",
+
+  "disease3Name": "लीफ स्कॉल्ड",
+  "disease3Desc": "कवकीय रोग जिसमें पत्तियों के किनारे झुलसे हुए दिखाई देते हैं।",
+
+  "disease4Name": "लीफ ब्लास्ट",
+  "disease4Desc": "Magnaporthe oryzae द्वारा होने वाला रोग जिसमें हीरे के आकार के धब्बे बनते हैं।",
+
+  "disease5Name": "नैरो ब्राउन स्पॉट",
+  "disease5Desc": "पत्ती की नसों के साथ संकीर्ण भूरे धब्बे बनते हैं।",
+
+  "disease6Name": "स्वस्थ पत्ती",
+  "disease6Desc": "धान की स्वस्थ पत्ती जिसमें किसी रोग के लक्षण नहीं हैं।",
+
+  "disease7Name": "गैर-धान पत्ती",
+  "disease7Desc": "अपलोड की गई छवि धान की पत्ती नहीं है।",
+
+  "techTitle": "प्रौद्योगिकी स्टैक",
+
+  "frontendTitle": "फ्रंटएंड",
+  "frontend1": "React",
+  "frontend2": "Vite",
+  "frontend3": "i18next",
+
+  "backendTitle": "बैकएंड",
+  "backend1": "FastAPI",
+  "backend2": "Python",
+  "backend3": "PyTorch",
+
+  "aiTitle": "AI एवं RAG",
+  "ai1": "EfficientNet-B3",
+  "ai2": "LangChain",
+  "ai3": "FAISS Vector Store",
+  "ai4": "BAAI Embeddings",
+  "ai5": "Cross Encoder Re-ranking",
+  "ai6": "Groq LLM",
+
+  "deployTitle": "डिप्लॉयमेंट",
+  "deploy1": "Vercel",
+  "deploy2": "Hugging Face Spaces",
+  "developerTitle": "डेवलपर",
+"developerRole": "Computer Science & Engineering Student | Full Stack & AI Developer"
+},
   "toast": {
     "success": "विश्लेषण सफलतापूर्वक पूर्ण!",
     "error": "विश्लेषण विफल। कृपया पुनः प्रयास करें।"

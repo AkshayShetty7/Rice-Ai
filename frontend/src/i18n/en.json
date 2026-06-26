@@ -11,7 +11,7 @@
     "titleHighlight": "Detection System",
     "subtitle": "Upload a rice leaf image and get instant AI-powered disease diagnosis. Helping farmers protect their crops with precision agriculture technology.",
     "ctaDetect": "Start Detection",
-    "ctaLearn": "Learn More",
+    "ctaLearn": "Ai chatbot",
     "stat1Value": "98.2%",
     "stat1Label": "Accuracy Rate",
     "stat2Value": "5",
@@ -54,24 +54,62 @@
     "botGreeting": "Hello! I'm your AI agricultural assistant. Ask me about rice diseases, symptoms, treatments, or farming best practices.",
     "aiResponse": "AI response coming soon..."
   },
-  "about": {
-    "title": "About Rice Leaf AI",
-    "subtitle": "Advanced AI technology for modern rice cultivation",
-    "missionTitle": "Our Mission",
-    "missionDesc": "We empower farmers and agricultural experts with cutting-edge AI technology to detect rice diseases early, reduce crop losses, and improve food security across rice-growing regions.",
-    "diseasesTitle": "Supported Diseases",
-    "disease1Name": "Brown Spot",
-    "disease1Desc": "Caused by Bipolaris oryzae fungus, appearing as oval brown lesions on leaves.",
-    "disease2Name": "Leaf Blast",
-    "disease2Desc": "Caused by Magnaporthe oryzae, creating diamond-shaped gray lesions.",
-    "disease3Name": "Bacterial Leaf Blight",
-    "disease3Desc": "Caused by Xanthomonas oryzae, causing yellowing and wilting of leaf tips.",
-    "techTitle": "Technology Stack",
-    "tech1": "Deep Learning CNN Model",
-    "tech2": "Transfer Learning (ResNet50)",
-    "tech3": "Real-time Image Processing",
-    "tech4": "React + Vite Frontend"
-  },
+"about": {
+  "title": "About Rice Leaf AI",
+  "subtitle": "AI-powered rice disease detection and intelligent farming assistant",
+
+  "missionTitle": "Our Mission",
+  "missionDesc": "Rice Leaf AI empowers farmers, students, and agricultural experts with advanced artificial intelligence to detect rice leaf diseases early, reduce crop losses, and improve productivity. Along with accurate disease detection, our AI chatbot provides instant guidance on symptoms, treatments, prevention methods, and best farming practices using a Retrieval-Augmented Generation (RAG) knowledge base.",
+
+  "diseasesTitle": "Supported Classes",
+
+  "disease1Name": "Bacterial Leaf Blight",
+  "disease1Desc": "Bacterial disease caused by Xanthomonas oryzae resulting in yellowing and drying of leaves.",
+
+  "disease2Name": "Brown Spot",
+  "disease2Desc": "Fungal disease caused by Bipolaris oryzae producing brown oval lesions.",
+
+  "disease3Name": "Leaf Scald",
+  "disease3Desc": "Fungal disease causing large irregular lesions with scorched leaf edges.",
+
+  "disease4Name": "Leaf Blast",
+  "disease4Desc": "Caused by Magnaporthe oryzae creating spindle-shaped gray lesions.",
+
+  "disease5Name": "Narrow Brown Spot",
+  "disease5Desc": "Produces narrow dark brown streaks along the leaf veins.",
+
+  "disease6Name": "Healthy Leaf",
+  "disease6Desc": "Healthy rice leaf with no visible disease symptoms.",
+
+  "disease7Name": "Non-Rice Leaf",
+  "disease7Desc": "Image does not contain a rice leaf and cannot be classified.",
+
+  "techTitle": "Technology Stack",
+
+  "frontendTitle": "Frontend",
+  "frontend1": "React",
+  "frontend2": "Vite",
+  "frontend3": "i18next",
+
+  "backendTitle": "Backend",
+  "backend1": "FastAPI",
+  "backend2": "Python",
+  "backend3": "PyTorch",
+
+  "aiTitle": "AI & RAG",
+  "ai1": "EfficientNet-B3",
+  "ai2": "LangChain",
+  "ai3": "FAISS Vector Store",
+  "ai4": "BAAI Embeddings",
+  "ai5": "Cross Encoder Re-ranking",
+  "ai6": "Groq LLM",
+
+  "deployTitle": "Deployment",
+  "deploy1": "Vercel",
+  "deploy2": "Hugging Face Spaces",
+  "developerTitle": "Developer",
+  "developerRole": "Computer Science & Engineering Student | Full Stack & AI Developer"
+},
   "toast": {
     "success": "Analysis completed successfully!",
     "error": "Analysis failed. Please try again."

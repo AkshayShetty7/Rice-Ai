@@ -23,10 +23,10 @@ export default function Home() {
 
           <div className="hero__actions anim-fade-up delay-3">
             <Link to="/detection" className="btn btn-primary" style={{ fontSize: "15px", padding: "12px 28px" }}>
-              🔬 {t("home.ctaDetect")}
+              {t("home.ctaDetect")}
             </Link>
-            <Link to="/about" className="btn btn-outline" style={{ fontSize: "15px", padding: "12px 24px" }}>
-              {t("home.ctaLearn")} →
+            <Link to="/chatbot" className="btn btn-primary" style={{ fontSize: "15px", padding: "12px 24px" }}>
+              {t("home.ctaLearn")} 
             </Link>
           </div>
 

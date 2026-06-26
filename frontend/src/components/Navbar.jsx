@@ -9,6 +9,7 @@ export default function Navbar() {
     { path: "/",          label: t("nav.home") },
     { path: "/detection", label: t("nav.detection") },
     { path: "/chatbot",   label: t("nav.chatbot") },
+    { path: "/about",   label: t("nav.about") },
   ];
 
   return (

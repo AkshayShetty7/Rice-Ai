@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Detection from "./pages/Detection";
 import Chatbot from "./pages/Chatbot";
+import About from "./pages/About";
 import "./styles/global.css";
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
           <Route path="/"          element={<Home />} />
           <Route path="/detection" element={<Detection />} />
           <Route path="/chatbot"   element={<Chatbot />} />
-        
+          <Route path="/About"   element={<About />} />
         </Routes>
       </BrowserRouter>
     </I18nProvider>
