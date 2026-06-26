@@ -31,20 +31,19 @@ https://huggingface.co/datasets/Akshayshetty7/rice-ai-documents
 * Confidence scoring
 * Out of Distribution (OOD) detection
 * Non rice leaf image rejection
+  
 
 ### Farmer Assistant
 
 * Natural language question answering
 * Retrieval Augmented Generation (RAG)
+* Maximal Marginal Relevance (MMR)
+* Cross Encoder Re ranking
+* RAG Evaluation Metrics (Recall@K, Hit Rate, MRR, Faithfulness, RAGAS)
 * Source grounded responses
 * Context aware conversations
 * Agricultural PDF knowledge base
 
-### Multilingual Support
-
-* English
-* Hindi
-* Kannada
 
 ---
 
@@ -92,7 +91,7 @@ The chatbot is powered by a curated dataset of 30+ agricultural PDF documents co
 * Disease symptoms
 * Treatment recommendations
 * Crop protection practices
-* Rice cultivation guidelines
+
 
 Dataset:
 https://huggingface.co/datasets/Akshayshetty7/rice-ai-documents
