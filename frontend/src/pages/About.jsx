@@ -186,7 +186,7 @@ export default function About() {
 
                 {section.items.map((item) => (
                   <div key={item} className="tech-item">
-                    <div className="tech-check">✓</div>
+                    <div className="tech-check">•</div>
                     {item}
                   </div>
                 ))}

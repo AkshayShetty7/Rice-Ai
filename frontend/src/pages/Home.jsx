@@ -43,30 +43,10 @@ export default function Home() {
          
           </div>
         </div>
+
       </section>
 
-      {/* Features */}
-      <section className="features">
-        <div className="container">
-          <div className="page-header">
-            <h2 className="page-header__title">{t("home.featuresTitle")}</h2>
-          </div>
-          <div className="features__grid">
-            {[
-              { icon: "📸", title: t("home.feature1Title"), desc: t("home.feature1Desc"), delay: "delay-1" },
-              { icon: "🤖", title: t("home.feature2Title"), desc: t("home.feature2Desc"), delay: "delay-2" },
-              { icon: "📊", title: t("home.feature3Title"), desc: t("home.feature3Desc"), delay: "delay-3" },
-            ].map(({ icon, title, desc, delay }) => (
-              <div key={title} className={`feature-card anim-fade-up ${delay}`}>
-                <div className="feature-icon" aria-hidden="true">{icon}</div>
-                <div className="feature-title">{title}</div>
-                <div className="feature-desc">{desc}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+    
       {/* Footer strip */}
       <footer className="footer">
         <div className="container">

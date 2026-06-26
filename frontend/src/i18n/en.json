@@ -9,7 +9,7 @@
   "home": {
     "title": "Rice Leaf Disease",
     "titleHighlight": "Detection System",
-    "subtitle": "Upload a rice leaf image and get instant AI-powered disease diagnosis. Helping farmers protect their crops with precision agriculture technology.",
+    "subtitle": "Upload a rice leaf image and get instant AI powered disease diagnosis. Helping farmers protect their crops with precision agriculture technology.",
     "ctaDetect": "Start Detection",
     "ctaLearn": "Ai chatbot",
     "stat1Value": "98.5%",
@@ -28,7 +28,7 @@
   },
   "detection": {
     "title": "Disease Detection",
-    "subtitle": "Upload a rice leaf image for AI-powered diagnosis",
+    "subtitle": "Upload a rice leaf image for AI powered diagnosis",
     "uploadTitle": "Upload Leaf Image",
     "uploadDesc": "Drag & drop or click to browse",
     "uploadHint": "Supports JPG, PNG, WEBP · Max 10MB",
@@ -56,7 +56,7 @@
   },
 "about": {
   "title": "About Rice Leaf AI",
-  "subtitle": "AI-powered rice disease detection and intelligent farming assistant",
+  "subtitle": "AI powered rice disease detection and intelligent farming assistant",
 
   "missionTitle": "Our Mission",
   "missionDesc": "Rice Leaf AI empowers farmers, students, and agricultural experts with advanced artificial intelligence to detect rice leaf diseases early, reduce crop losses, and improve productivity. Along with accurate disease detection, our AI chatbot provides instant guidance on symptoms, treatments, prevention methods, and best farming practices using a Retrieval-Augmented Generation (RAG) knowledge base.",
@@ -116,7 +116,7 @@
   },
   "footer": {
     "tagline": "Protecting rice crops with AI intelligence",
-    "rights": "© 2025 Rice Leaf AI. All rights reserved."
+    "rights": "© 2026 Rice Leaf AI. All rights reserved."
   },
 
   
