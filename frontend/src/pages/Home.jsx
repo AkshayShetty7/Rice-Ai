@@ -40,10 +40,7 @@ export default function Home() {
               <div className="stat-value">{t("home.stat2Value")}</div>
               <div className="stat-label">{t("home.stat2Label")}</div>
             </div>
-            <div className="stat-item">
-              <div className="stat-value">{t("home.stat3Value")}</div>
-              <div className="stat-label">{t("home.stat3Label")}</div>
-            </div>
+         
           </div>
         </div>
       </section>
