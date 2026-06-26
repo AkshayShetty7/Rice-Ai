@@ -430,6 +430,20 @@ a { text-decoration: none; color: inherit; }
   transition: border-color 0.2s, background 0.2s;
   background: var(--green-50);
 }
+
+.upload-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.upload-actions .btn {
+  min-width: 170px;
+
+}
+
 .upload-zone:hover, .upload-zone.drag-over {
   border-color: var(--green-500);
   background: var(--green-100);

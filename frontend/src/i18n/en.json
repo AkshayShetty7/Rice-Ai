@@ -17,14 +17,8 @@
     "stat2Value": "5",
     "stat2Label": "Diseases Detected",
     "stat3Value": "<2s",
-    "stat3Label": "Analysis Time",
-    "featuresTitle": "How It Works",
-    "feature1Title": "Upload Image",
-    "feature1Desc": "Take a photo of your rice leaf or upload from your gallery for instant analysis.",
-    "feature2Title": "AI Analysis",
-    "feature2Desc": "Our deep learning model scans for disease patterns with high precision.",
-    "feature3Title": "Get Results",
-    "feature3Desc": "Receive detailed diagnosis with confidence scores and treatment recommendations."
+    "stat3Label": "Analysis Time"
+    
   },
   "detection": {
     "title": "Disease Detection",
@@ -44,7 +38,9 @@
     "tip1": "Ensure the leaf is in clear focus",
     "tip2": "Use natural lighting for best results",
     "tip3": "Capture the full leaf in frame",
-    "tip4": "Avoid shadows across the leaf surface"
+    "tip4": "Avoid shadows across the leaf surface",
+    "uploadImage": "Upload Image",
+    "takePhoto": "Take Photo"
   },
   "chatbot": {
     "title": "AI Field Assistant",
