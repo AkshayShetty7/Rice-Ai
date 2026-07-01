@@ -18,7 +18,7 @@ export default function Home() {
         </span>
 
           <a
-            href="/sample-dataset.zip"
+            href="/sample_datasets.zip"
             download
             className="hero-topbar__button"
           >
