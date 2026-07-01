@@ -11,6 +11,21 @@ export default function Home() {
         <div className="hero__bg" aria-hidden="true" />
         <div className="hero__decoration" aria-hidden="true" />
         <div className="container hero__content">
+
+         <div className="hero-topbar">
+          <span className="hero-topbar__text blink-text">
+          New here? Download a sample rice leaf dataset to explore Rice Leaf AI
+        </span>
+
+          <a
+            href="/sample-dataset.zip"
+            download
+            className="hero-topbar__button"
+          >
+            Download Dataset ▼
+          </a>
+        </div>
+
         
           <h1 className="hero__title anim-fade-up delay-1">
             {t("home.title")}<br />

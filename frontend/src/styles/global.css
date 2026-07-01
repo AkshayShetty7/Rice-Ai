@@ -1039,3 +1039,54 @@ a { text-decoration: none; color: inherit; }
     transform: translateY(0);
   }
 }
+
+.hero-topbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 70px;
+}
+
+.hero-topbar__text {
+  font-size: 14px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.hero-topbar__button {
+  padding: 12px 22px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.hero-topbar__button:hover {
+  transform: translateY(-2px);
+}
+
+.blink-text {
+  animation: blinkGlow 1.6s infinite;
+  font-weight: 600;
+  color: #051206;
+}
+
+@keyframes blinkGlow {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.35;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
