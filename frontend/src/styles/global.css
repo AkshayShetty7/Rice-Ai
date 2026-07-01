@@ -1048,10 +1048,16 @@ a { text-decoration: none; color: inherit; }
   gap: 18px;
 
   margin-bottom: 70px;
+
+  /* Move it upward */
+  margin-top: -35px;
+
+  /* Move slightly to the right */
+  padding-right: 20px;
 }
 
 .hero-topbar__text {
-  font-size: 14px;
+  font-size: 5px;
   color: #4b5563;
   font-weight: 500;
 }
@@ -1064,6 +1070,7 @@ a { text-decoration: none; color: inherit; }
   color: #111827;
   text-decoration: none;
   font-weight: 600;
+  font-size: smaller;
   transition: .2s;
 }
 
@@ -1073,7 +1080,8 @@ a { text-decoration: none; color: inherit; }
 
 .blink-text {
   animation: blinkGlow 1.6s infinite;
-  font-weight: 600;
+  font-weight: 50;
+  font-size: smaller;
   color: #051206;
 }
 
